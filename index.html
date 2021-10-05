@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" placeholder="" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+    <div class="left-part">
+      <h1 class="h1 fw-700">Learn to code by watching others</h1>
+      <p class="left-part__para fw-400">See how experienced developers solve problems in real-time. Watching scripted
+        tutorials is
+        great, but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="right-part">
+      <button class="right-part__btn btn fw-600">Try it free 7 days <span class="btn__text-color fw-400">then $20/mo.
+          thereafter</span>
+      </button>
+      <form id="form" class="right-part__form">
+        <div class="input-group">
+          <input class="form__input fw-600" placeholder="First Name" type="text" class="form__input fw-600">
+          <img src="./images/icon-error.svg" class="input__error-icon" aria-label="Error Indicator" alt="">
+          <p class="form__error-text"></p>
+        </div>
+        <div class="input-group">
+          <input class="form__input fw-600" placeholder="Last Name" type="text" class="form__input fw-600">
+          <img src="./images/icon-error.svg" class="input__error-icon" aria-label="Error Indicator" alt="">
+          <p class="form__error-text"></p>
+        </div>
+        <div class="input-group">
+          <input class="form__input fw-600" placeholder="Email Address" type="email" class="form__input fw-600">
+          <img src="./images/icon-error.svg" class="input__error-icon" aria-label="Error Indicator" alt="">
+          <p class="form__error-text"></p>
+        </div>
+        <div class="input-group">
+          <input class="form__input fw-600" placeholder="Password" type="password" class="form__input fw-600">
+          <img src="./images/icon-error.svg" class="input__error-icon" aria-label="Error Indicator" alt="">
+          <p class="form__error-text"></p>
+        </div>
+        <button type="submit" class="form__submit-btn btn">Claim your free trial</button>
+      </form>
+      <p class="right-part__disclaimer">By clicking the button, you are agreeing to our <span
+          class="disclaimer__red-text fw-500">Terms and Services</span></p>
+    </div>
+  </main>
+
+
+
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
