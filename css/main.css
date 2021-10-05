@@ -109,6 +109,7 @@ main {
 }
 .disclaimer__red-text {
   color: hsl(0, 100%, 74%);
+  text-decoration: none;
 }
 .attribution {
   font-size: 11px;
