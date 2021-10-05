@@ -37,7 +37,7 @@
         input.style.border = "1px solid hsl(0, 100%, 74%)";
 
         // give the para the error text
-        if (errorText[1] === "{" && errorText[2] === "}")  {
+        if (errorText.indexOf("{}") === 0)  {
           errorElement.textContent =
             input.getAttribute("data-error") +
             " " +
