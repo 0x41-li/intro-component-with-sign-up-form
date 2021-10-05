@@ -22,6 +22,7 @@ body {
 body {
   font-size: 16px;
   font-family: @ff;
+
 }
 
 // Utilities
@@ -58,28 +59,65 @@ body {
 main {
   padding: 60px 20px;
   background: url("../images/bg-intro-mobile.png"), linear-gradient(@red, @red);
+  
+  min-height: 100vh;
 
   @media screen and (min-width: 1024px) {
-    
+    background: url("../images/bg-intro-desktop.png"), linear-gradient(@red, @red);
+    display: flex;
+    gap: 40px;
+    padding: 60px 5%;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 60px 10%;
+  }
+}
+
+.all-wrapper {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    gap: 40px;
+    padding: 60px 5%;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    margin: auto;
   }
 }
 
 .left-part {
   max-width: 600px;
   margin: auto;
+  flex: 0 0 46%;
 }
 
+
 .right-part {
-  .left-part();
+  max-width: 600px;
+  margin: auto;
+  flex: 1;
 }
 
 .h1 {
   text-align: center;
   color: white;
+
+  @media screen and (min-width: 1024px) {
+    text-align: left;
+    font-size: 50px;
+    max-width: 500px;
+  }
 }
 
+
 .left-part__para {
-  .h1();
+  text-align: center;
+  color: white;
+
+  @media screen and (min-width: 1024px) {
+    text-align: left;
+  }
+
   margin-bottom: 60px;
   line-height: 24px;
 }
@@ -110,6 +148,10 @@ main {
   flex-flow: column nowrap;
   gap: 20px;
   box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
+
+  @media screen and (min-width: 1024px) {
+    padding: 50px 30px;
+  }
 }
 
 .form__input {
@@ -151,12 +193,14 @@ main {
 }
 
 .form__submit-btn:hover {
-  background-color: hsl(154, 66%, 36%);;
+  background-color: hsl(154, 49%, 67%);
+  ;
 }
 
 .right-part__disclaimer {
   text-align: center;
   color: @grayish-blue;
+  font-size: 12px;
 }
 
 .disclaimer__red-text {
