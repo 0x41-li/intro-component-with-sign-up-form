@@ -115,6 +115,13 @@ main {
   text-align: center;
   padding: 20px;
 }
+.form__error-text {
+  color: hsl(0, 100%, 74%);
+  text-align: right;
+  font-size: 12px;
+  margin-top: 4px;
+  font-style: italic;
+}
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
