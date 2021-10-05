@@ -46,6 +46,7 @@ Users should be able to:
 - Mobile-first workflow
 - PostCSS
 - JavaScript
+- Less
 
 ### What I learned
 
