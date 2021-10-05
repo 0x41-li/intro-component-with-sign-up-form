@@ -29,10 +29,19 @@ body {
   border-radius: 10px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  width: 100%;
 }
 main {
   padding: 60px 20px;
   background: url("../images/bg-intro-mobile.png"), linear-gradient(hsl(0, 100%, 74%), hsl(0, 100%, 74%));
+}
+.left-part {
+  max-width: 600px;
+  margin: auto;
+}
+.right-part {
+  max-width: 600px;
+  margin: auto;
 }
 .h1 {
   text-align: center;

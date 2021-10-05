@@ -48,6 +48,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  width: 100%;
 }
 
 
@@ -57,6 +58,19 @@ body {
 main {
   padding: 60px 20px;
   background: url("../images/bg-intro-mobile.png"), linear-gradient(@red, @red);
+
+  @media screen and (min-width: 1024px) {
+    
+  }
+}
+
+.left-part {
+  max-width: 600px;
+  margin: auto;
+}
+
+.right-part {
+  .left-part();
 }
 
 .h1 {

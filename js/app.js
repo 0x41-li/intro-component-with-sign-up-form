@@ -23,11 +23,16 @@
             const test = emailRegExp.test(input.value);
             if (!test) {
               displayError(input, "Looks like this is not an email");
+            } else {
+              removeError(input);
             }
+          } else {
+            removeError(input);
           }
         }
       }
 
+      // function to display input errors
       function displayError(input, errorText) {
         // get error para and icon element
         let errorIconElement = input.nextElementSibling;
@@ -37,7 +42,7 @@
         input.style.border = "1px solid hsl(0, 100%, 74%)";
 
         // give the para the error text
-        if (errorText.indexOf("{}") === 0)  {
+        if (errorText.indexOf("{}") === 0) {
           errorElement.textContent =
             input.getAttribute("data-error") +
             " " +
@@ -55,6 +60,20 @@
         // make the para and error icon visible by block display
         errorIconElement.style.display = "block";
         errorElement.style.display = "block";
+      }
+
+      // remove errors
+      function removeError(input) {
+        // get error para and icon element
+        let errorIconElement = input.nextElementSibling;
+        let errorElement = input.nextElementSibling.nextElementSibling;
+
+        // default input border
+        input.style.border = "1px solid #dedede";
+
+        // make the para and error icon invisible by block display
+        errorIconElement.style.display = "none";
+        errorElement.style.display = "none";
       }
     }
   }
